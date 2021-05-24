@@ -2,7 +2,6 @@
 
 SS2020 
 
-Leitung: Dr. Friedrich Wünsch, Louis Ritzkowski
 
 # Projektname #
 Corona-Survival-Game
