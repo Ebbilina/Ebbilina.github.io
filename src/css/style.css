@@ -61,6 +61,11 @@ a{
     z-index: 5;
 }
 
+audio{
+    z-index: 6;
+    margin-bottom: 13vw;
+}
+
 #BoxA{
     grid-area: A;
     background-image: url(../images/HikingA.JPG);
@@ -103,6 +108,10 @@ a{
 }
 #BoxF{
     grid-area: F;
+    background-image: url(../images/photoK.jpg);
+}
+#picF{
+    background-image: url(../images/photoK.jpg);
 }
 #BoxG{
     grid-area: G;
@@ -112,10 +121,14 @@ a{
 }
 #BoxI{
     grid-area: I;
+    background-image: url(../images/sam1.jpg);
 }
+
 #BoxJ{
     grid-area: J;
+    background-image: url(../images/sam2.jpg);
 }
+
 
 
 #main-grid {
