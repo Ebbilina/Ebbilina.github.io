@@ -1,0 +1,134 @@
+* {
+    /*border: 0.1em gray dashed;*/
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(../images/backg.jpg);
+    background-position: fixed; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}
+.box {
+    position: relative;
+    border-radius: 0.7em;
+    border: 0.1em white solid;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}
+.box * {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    display: block;
+}
+
+.blurPic {
+    border-radius: 0.7em;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    background-color: rgba(241, 233, 216, 0.329);
+    z-index: 2;
+}
+a:hover{
+    background-color: rgba(250, 249, 248, 0.329);
+}
+.picture{
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    border-radius: 50%;
+    z-index: 3;
+}
+.textfield{
+    height: min-content;
+    padding: 1em;
+    color: black;
+    background-color: rgba(240, 255, 240, 0.527);
+    border: 0.1em white solid;
+    border-radius: 0 0 0.7em 0.7em;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 4;
+}
+a{
+    display: block;
+    height: 25vw;
+    z-index: 5;
+}
+
+#BoxA{
+    grid-area: A;
+    background-image: url(../images/HikingA.JPG);
+    
+}
+#picA{
+    background-image: url(../images/HikingA.JPG);
+}
+
+#BoxB{
+    grid-area: B;
+    background-image: url(../images/HikingB.JPG);
+}
+#picB{
+    background-image: url(../images/HikingB.JPG);
+}
+
+#BoxC{
+    grid-area: C;
+    background-image: url(../images/Board.JPG);
+}
+#picC{
+    background-image: url(../images/Board.JPG);
+}
+
+#BoxD{
+    grid-area: D;
+    background-image: url(../images/Corona.JPG);
+}
+#picD{
+    background-image: url(../images/Corona.JPG);
+}
+
+#BoxE{
+    grid-area: E;
+    background-image: url(../images/suchbild-veraendert.jpg);
+}
+#picE{
+    background-image: url(../images/suchbild-veraendert.jpg);
+}
+#BoxF{
+    grid-area: F;
+}
+#BoxG{
+    grid-area: G;
+}
+#BoxH{
+    grid-area: H;
+}
+#BoxI{
+    grid-area: I;
+}
+#BoxJ{
+    grid-area: J;
+}
+
+
+#main-grid {
+    display: grid;
+    grid-template-columns: 12vw 35vw 35vw 12vw;
+    grid-template-rows: 30vw 30vw 30vw 30vw 30vw;
+    grid-template-areas: 
+        ". A B . "
+        ". C D . "
+        ". E F . "
+        ". G H . "
+        ". I J . ";
+    column-gap: 2vw;
+    row-gap: 3vw;
+}
+

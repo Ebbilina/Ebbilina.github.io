@@ -1,31 +1,103 @@
+<!DOCTYPE html>
 <html>
     <head>
         <link rel="stylesheet" href="src/css/style.css">
         
     </head>
     <body>
+        <header>
+            <h1>Eva Pulina's recent projects</h1>
+            <p id="welcomeText">Hallo und Herzlich Willkommen</br>
+            Sehen Sie sich um.</p>
+        </header>
+        <main>
+            <div id="main-grid">
+                <div class="box" id="BoxA">
+                    
+                    <div class="blurPic"></div>
+                    <div class="picture" id="picA"></div>
+                    <div class="textfield">Bachelorthesis Project</div>
+                    <a href="https://homepages.ur.de/~pue35175/index.html" target="_blank"></a>
+                </div>
+                <div class="box" id="BoxB">
+                    <div class="blurPic"></div>
+                    <div class="picture" id="picB"></div>
+                    <div class="textfield">First draft Learning App</div>
+                    <a href="https://homepages.uni-regensburg.de/~pip45451/index.html" target="_blank"></a>
+                </div>
+                <div class="box" id="BoxC">
+                    <div class="blurPic"></div>
+                    <div class="picture" id="picC"></div>
+                    <div class="textfield">Collaborative Pinboard</div>
+                    <a href="https://post-it-pinnwand.herokuapp.com/" target="_blank"></a>
+                </div>
+                <div class="box" id="BoxD">
+                    <div class="blurPic"></div>
+                    <div class="picture" id="picD"></div>
+                    <div class="textfield">Corona-Game</div>
+                    <a href="https://ebbilina.github.io/CoronaGame/" target="_blank"></a>
+                </div>
+                <div class="box" id="BoxE">
+                    <div class="blurPic"></div>
+                    <div class="picture" id="picE"></div>
+                    <div class="textfield">3D Modelling</div>
+                </div>
+                <div class="box" id="BoxF">Box numero f</div>
+                <div class="box" id="BoxG">Box numero g</div>
+                <div class="box" id="BoxH">Box numero h</div>
+                <div class="box" id="BoxI">Box numero i</div>
+                <div class="box" id="BoxJ">Box numero j</div>
 
-        <div class="gameBox centered">
-            <div class="menu centered">choose your mode
-                <div class = "button" id="h">* healthy *</div>
-                <div class = "button" id="d">- dark -</div>
             </div>
 
-            <div class="logo">The Corona-Survival-Game</div>
             
-            <canvas class="screen" width="800" height="400"></canvas>
-            <ul class="toiletpaper">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-            <div class="button">
-                <div class="reset" id="reset">menu</div>
-                <div class="shoot" >shoot</div>
-            </div>
-        </div>
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+              
+                  <div class="mySlides">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="src/images/flat1.jpg" style="width:100%">
+                  </div>
+              
+                  <div class="mySlides">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="img_snow_wide.jpg" style="width:100%">
+                  </div>
+              
+                  <div class="mySlides">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="img_mountains_wide.jpg" style="width:100%">
+                  </div>
+                  
+                  <div class="mySlides">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="img_lights_wide.jpg" style="width:100%">
+                  </div>
+                  
+                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              
+                  <div class="caption-container">
+                    <p id="caption"></p>
+                  </div>
+              
+              
+                  <div class="column">
+                    <img class="demo cursor" src="img_nature_wide.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="img_snow_wide.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="img_mountains_wide.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="img_lights_wide.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+                  </div>
+                </div>
+              </div>
+        </main>
 
     </body>
     <script type="module" src="src/js/index.js"></script>
