@@ -34,8 +34,8 @@ body{
     background-color: rgba(241, 233, 216, 0.329);
     z-index: 2;
 }
-a:hover{
-    background-color: rgba(250, 249, 248, 0.329);
+a:hover, .hoverbox:hover{
+    background-color: rgba(250, 249, 248, 0.274);
 }
 .picture{
     background-position: center; /* Center the image */
@@ -55,9 +55,9 @@ a:hover{
     -webkit-backdrop-filter: blur(10px);
     z-index: 4;
 }
-a{
+a, .hoverbox{
     display: block;
-    height: 25vw;
+    height: 100%;
     z-index: 5;
 }
 
@@ -140,6 +140,7 @@ audio{
 
 
 #main-grid {
+    align-self: center;
     display: grid;
     grid-template-columns: 12vw 35vw 35vw 12vw;
     grid-template-rows: 30vw 30vw 30vw 30vw 30vw;
@@ -152,6 +153,35 @@ audio{
     column-gap: 2vw;
     row-gap: 3vw;
 }
+
+
+@media only screen and (max-width: 600px) {
+    #main-grid {
+        padding-left: 3vw;
+        grid-template-columns: 90vw;
+    grid-template-rows: repeat(90vw);
+    row-gap: 4em;
+        grid-template-areas: 
+            "A"
+            "B"
+            "C"
+            "D"
+            "E"
+            "F"
+            "G"
+            "H"
+            "I"
+            "J"
+            ;
+    }
+    .box{
+        height: 40vw;
+    }
+    a{
+        height: 40vw;
+    }
+}
+
 .row > .column {
     padding: 0 8px;
   }
@@ -172,20 +202,20 @@ audio{
   .modal {
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 6;
     padding-top: 100px;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.699);
   }
   
   /* Modal Content */
   .modal-content {
     position: relative;
-    background-color: #fefefe;
+    background-color: rgba(0, 0, 0, 0.582);
     margin: auto;
     padding: 0;
     width: 90%;
@@ -213,6 +243,14 @@ audio{
   .mySlides {
     display: none;
   }
+
+  .mySlides img{
+      width: 100%;
+      max-width: 100%;
+      height: 100%;
+      max-height: 80vh;
+      object-fit: contain;
+  }
   
   /* Next & previous buttons */
   .prev,
@@ -221,6 +259,7 @@ audio{
     position: absolute;
     top: 50%;
     width: auto;
+    height: 7em;
     padding: 16px;
     margin-top: -50px;
     color: white;
@@ -230,6 +269,7 @@ audio{
     border-radius: 0 3px 3px 0;
     user-select: none;
     -webkit-user-select: none;
+    z-index: 9;
   }
   
   /* Position the "next button" to the right */
@@ -259,15 +299,6 @@ audio{
     background-color: black;
     padding: 2px 16px;
     color: white;
-  }
-  
-  img.demo {
-    opacity: 0.6;
-  }
-  
-  .active,
-  .demo:hover {
-    opacity: 1;
   }
   
   img.hover-shadow {
