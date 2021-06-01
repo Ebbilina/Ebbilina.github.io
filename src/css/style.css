@@ -7,8 +7,8 @@
 }
 body{
     
-    background-image: url(../images/backg.jpg);
-    background-position: fixed; /* Center the image */
+    background-image: url(../images/back.jpeg);
+    background-attachment: fixed; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;
 }
