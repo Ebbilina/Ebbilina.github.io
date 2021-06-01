@@ -12,6 +12,11 @@ body{
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;
 }
+#logo{
+    
+    width: 2em;
+    height: auto;
+}
 
 main{
     padding: 2vw 0 3vw 0;
@@ -118,35 +123,35 @@ h3{
 
 #BoxA{
     grid-area: A;
-    background-image: url(../images/HikingA.JPG);
+    background-image: url(../images/HikingA.jpg);
     
 }
 #picA{
-    background-image: url(../images/HikingA.JPG);
+    background-image: url(../images/HikingA.jpg);
 }
 
 #BoxB{
     grid-area: B;
-    background-image: url(../images/HikingB.JPG);
+    background-image: url(../images/HikingB.jpg);
 }
 #picB{
-    background-image: url(../images/HikingB.JPG);
+    background-image: url(../images/HikingB.jpg);
 }
 
 #BoxC{
     grid-area: C;
-    background-image: url(../images/Board.JPG);
+    background-image: url(../images/Board.jpg);
 }
 #picC{
-    background-image: url(../images/Board.JPG);
+    background-image: url(../images/Board.jpg);
 }
 
 #BoxD{
     grid-area: D;
-    background-image: url(../images/Corona.JPG);
+    background-image: url(../images/Corona.jpg);
 }
 #picD{
-    background-image: url(../images/Corona.JPG);
+    background-image: url(../images/Corona.jpg);
 }
 
 #BoxE{
