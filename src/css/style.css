@@ -30,7 +30,7 @@ main{
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;
 }
-.box * {
+.box *{
     position: absolute;
     height: 100%;
     width: 100%;
@@ -75,6 +75,7 @@ main{
     display: block;
     height: 100%;
     z-index: 5;
+    cursor: pointer;
 }
 
 #inlink, p{
@@ -87,6 +88,11 @@ p{
 audio{
     z-index: 6;
     margin-bottom: 20vw;
+    
+}
+
+#song{
+    height: 3em;
 }
 header{
     position: sticky;
