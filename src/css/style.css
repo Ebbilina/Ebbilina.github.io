@@ -117,6 +117,10 @@ h1, footer{
     border:0.08em rgba(241, 233, 216, 0.329) solid;
 }
 
+footer {
+    background: linear-gradient(60deg, rgba(40, 100, 50, 0.521) 0%, rgba(51, 63, 224, 0.521) 40%, rgba(73, 144, 185, 0.521) 100%);
+}
+
 #welcomeText{
     color: white;
     text-align: center;
